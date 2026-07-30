@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | Solixx Media LLC</title>
+  <meta name="description" content="Privacy Policy of Solixx Media LLC. Learn how we collect, use, disclose, and protect your personal information.">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary-color: #21205a;
+      --secondary-color: #6c63ff;
+      --text-dark: #1a1a2e;
+      --text-light: #666;
+      --bg-light: #f8f9fa;
+      --white: #ffffff;
+      --border-color: #e0e0e0;
+    }
+
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    /* Header Styles */
+    .header {
+      background: var(--white);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .header .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .navbar-list {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .navbar-link {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .navbar-link:hover {
+      color: var(--secondary-color);
+    }
+
+    .navbar-link.active {
+      color: var(--secondary-color);
+      font-weight: 600;
+    }
+
+    .header-phone {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--primary-color);
+    }
+
+    /* Main Content */
+    main {
+      margin-top: 100px;
+      padding: 4rem 2rem;
+      min-height: 70vh;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .page-title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      position: relative;
+      padding-bottom: 1rem;
+    }
+
+    .page-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: var(--secondary-color);
+      border-radius: 2px;
+    }
+
+    .last-updated {
+      text-align: center;
+      color: var(--text-light);
+      margin-bottom: 3rem;
+      font-size: 0.95rem;
+    }
+
+    .policy-content {
+      background: var(--white);
+      padding: 3rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .policy-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .policy-section h3 {
+      color: var(--primary-color);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--bg-light);
+    }
+
+    .policy-section p {
+      margin-bottom: 1rem;
+      color: var(--text-light);
+      line-height: 1.8;
+    }
+
+    .policy-section ul {
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+      color: var(--text-light);
+    }
+
+    .policy-section ul li {
+      margin-bottom: 0.5rem;
+      line-height: 1.8;
+    }
+
+    .policy-section a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .policy-section a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-info {
+      background: var(--bg-light);
+      padding: 2rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+
+    .contact-info ul {
+      list-style: none;
+      margin-left: 0;
+    }
+
+    .contact-info li {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .contact-info strong {
+      color: var(--primary-color);
+      min-width: 80px;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--primary-color);
+      color: var(--white);
+      padding: 4rem 2rem 2rem;
+      margin-top: 4rem;
+    }
+
+    .footer .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-section h4 {
+      color: var(--white);
+      margin-bottom: 1.5rem;
+      font-size: 1.2rem;
+    }
+
+    .footer-section p {
+      color: rgba(255,255,255,0.8);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-section a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-section a:hover {
+      color: var(--white);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.6);
+      font-size: 0.9rem;
+    }
+
+    /* Mobile Bottom Bar */
+    .mobile-bottom {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+      z-index: 999;
+    }
+
+    .mobile-bottom-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 1rem;
+    }
+
+    .mobile-bottom-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+      text-decoration: none;
+      color: var(--primary-color);
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .mobile-bottom-item svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar-list {
+        display: none;
+      }
+
+      .header-phone span {
+        display: none;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      main {
+        margin-top: 80px;
+        padding: 2rem 1rem;
+      }
+
+      .page-title {
+        font-size: 2rem;
+      }
+
+      .policy-content {
+        padding: 2rem 1.5rem;
+      }
+
+      .policy-section h3 {
+        font-size: 1.3rem;
+      }
+
+      .mobile-bottom {
+        display: block;
+      }
+
+      body {
+        padding-bottom: 80px;
+      }
+    }
+
+    /* Utility */
+    .text-center {
+      text-align: center;
+    }
+
+    .mb-2 {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">Solixx Media LLC</a>
+      
+      <nav>
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="/#about" class="navbar-link">About</a></li>
+          <li><a href="/#services" class="navbar-link">Services</a></li>
+          <li><a href="/#features" class="navbar-link">Features</a></li>
+          <li><a href="index.html" class="navbar-link">Portfolio</a></li>
+          <li><a href="privacy.html" class="navbar-link active">Privacy Policy</a></li>
+        </ul>
+      </nav>
+
+      <a href="tel:+917042201868" class="header-phone">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+        </svg>
+        <span>+91 7042201868</span>
+      </a>
+
+      <button class="mobile-menu-btn">☰</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <h1 class="page-title">Privacy Policy</h1>
+      <p class="last-updated"><strong>Last Updated:</strong> July 30, 2026</p>
+
+      <div class="policy-content">
+        <div class="policy-section">
+          <h3>1. Introduction</h3>
+          <p>Welcome to Solixx Media LLC ("we," "our," or "us"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our digital marketing services.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>2. Information We Collect</h3>
+          <p>We may collect personal information that you voluntarily provide to us when you express an interest in obtaining information about us or our products and services, participate in activities on the website, or otherwise contact us. This includes:</p>
+          <ul>
+            <li><strong>Personal Data:</strong> Name, email address, phone number, and company name.</li>
+            <li><strong>Project Data:</strong> Information you provide in contact forms, consultation requests, or briefs.</li>
+            <li><strong>Technical Data:</strong> IP address, browser type, device information, and usage data collected via cookies and similar tracking technologies.</li>
+          </ul>
+        </div>
+
+        <div class="policy-section">
+          <h3>3. How We Use Your Information</h3>
+          <p>We use the information we collect to:</p>
+          <ul>
+            <li>Provide, operate, and maintain our website and digital marketing services.</li>
+            <li>Respond to your inquiries, comments, or questions and provide customer support.</li>
+            <li>Send you administrative information, updates, and marketing communications (only with your explicit consent).</li>
+            <li>Improve our website, services, and overall user experience through analytics.</li>
+          </ul>
+        </div>
+
+        <div class="policy-section">
+          <h3>4. Cookies and Tracking Technologies</h3>
+          <p>We use cookies and similar tracking technologies to track the activity on our website and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our website.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>5. Sharing Your Information</h3>
+          <p>We do not sell, trade, or rent your personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates, and advertisers for the purposes outlined above.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>6. Data Security</h3>
+          <p>We implement appropriate technical and organizational security measures designed to protect your personal data against unauthorized or unlawful processing, accidental loss, destruction, or damage. However, please note that no method of transmission over the Internet is 100% secure.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>7. Your Privacy Rights</h3>
+          <p>Depending on your location, you may have the right to access, correct, update, or request deletion of your personal information. To exercise these rights, please contact us using the details provided below.</p>
+        </div>
+
+        <div class="policy-section">
+          <h3>8. Contact Us</h3>
+          <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+          <div class="contact-info">
+            <ul>
+              <li>
+                <strong>Email:</strong> 
+                <a href="mailto:support@solixxmediallc.com">support@solixxmediallc.com</a>
+              </li>
+              <li>
+                <strong>Phone:</strong> 
+                <a href="tel:+917042201868">+91 7042201868</a>
+              </li>
+              <li>
+                <strong>Address:</strong> 
+                30 N Gould St STE R, Sheridan, WY 82801, United States
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>About Solixx Media</h4>
+          <p>Expert Agency for Website development, Digital Marketing and Business Scaling.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="index.html">Services</a></li>
+            <li><a href="index.html">Portfolio</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">SEO Services</a></li>
+            <li><a href="#">Social Media Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+917042201868">+91 7042201868</a></li>
+            <li><a href="mailto:support@solixxmediallc.com">support@solixxmediallc.com</a></li>
+            <li>30 N Gould St STE R<br>Sheridan, WY 82801<br>United States</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Solixx Media LLC. All rights reserved. | <a href="/privacy-policy" style="color: rgba(255,255,255,0.6);">Privacy Policy</a> | <a href="/terms-and-conditions" style="color: rgba(255,255,255,0.6);">Terms & Conditions</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom Bar -->
+  <div class="mobile-bottom">
+    <div class="mobile-bottom-container">
+      <a href="https://wa.me/917042201868" class="mobile-bottom-item">
+        <svg fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        <span>WhatsApp</span>
+      </a>
+      <a href="tel:+917042201868" class="mobile-bottom-item">
+        <svg fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.44-5.15-3.75-6.59-6.59l1.97-1.57c.26-.26.38-.64.24-1.01-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+        </svg>
+        <span>Call Us</span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+      const navList = document.querySelector('.navbar-list');
+      navList.style.display = navList.style.display === 'flex' ? 'none' : 'flex';
+      navList.style.position = 'absolute';
+      navList.style.top = '100%';
+      navList.style.left = '0';
+      navList.style.right = '0';
+      navList.style.flexDirection = 'column';
+      navList.style.background = 'white';
+      navList.style.padding = '2rem';
+      navList.style.boxShadow = '0 5px 10px rgba(0,0,0,0.1)';
+    });
+  </script>
+</body>
+</html>
